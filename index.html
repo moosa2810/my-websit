@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Register</title>
+    <title>Register for first time</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <!-- Registration Form -->
-    <div id="formPage" class="form-page">
-        <h2>Register</h2>
+        <!-- Registration Form -->
+        <div id="formPage" class="form-page">
+            <h2>Register</h2>
 
-        <div class="input-group">
-            <input type="text" id="fname" placeholder="First Name">
-            <small class="error" id="fnameError"></small>
+            <div class="input-group">
+                <input type="text" id="fname" placeholder="First Name">
+                <small class="error" id="fnameError"></small>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="lname" placeholder="Last Name">
+                <small class="error" id="lnameError"></small>
+            </div>
+
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Email Address">
+                <small class="error" id="emailError"></small>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Password">
+                <small class="error" id="passError"></small>
+            </div>
+
+            <button onclick="validateForm()">Register</button>
         </div>
 
-        <div class="input-group">
-            <input type="text" id="lname" placeholder="Last Name">
-            <small class="error" id="lnameError"></small>
+        <!-- Success Page -->
+        <div id="successPage" class="success-page">
+            <div class="checkmark">✓</div>
+            <h1>Registration Successful!</h1>
         </div>
 
-        <div class="input-group">
-            <input type="email" id="email" placeholder="Email Address">
-            <small class="error" id="emailError"></small>
-        </div>
-
-        <div class="input-group">
-            <input type="password" id="password" placeholder="Password">
-            <small class="error" id="passError"></small>
-        </div>
-
-        <button onclick="validateForm()">Register</button>
     </div>
 
-    <!-- Success Page -->
-    <div id="successPage" class="success-page">
-        <div class="checkmark">✓</div>
-        <h1>Registration Successful!</h1>
-    </div>
-
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
